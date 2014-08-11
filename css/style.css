@@ -5,9 +5,9 @@ body {
 }
 
 .content {
-    width: 1000px;
+    max-width: 1000px;
     padding: 40px 40px 100px;
-    margin: 400px auto 0;
+    margin: 400px auto 40px;
     background: #ccc;
     -webkit-box-shadow: 0px 1px 5px 0px #333;
     -moz-box-shadow: 0px 1px 5px 0px #333;
@@ -35,4 +35,25 @@ img {
     position: fixed;
     bottom: 0;
     right: 0;
+}
+
+@media only screen and (max-width: 767px) {
+    img {
+        float: none;
+        display: block;
+    }
+    
+    .content {
+        width: 60%;
+        padding: 40px;
+    }
+
+    .quote {
+        font-size: 36px;
+    }
+
+    #kendrick {
+        position: relative;
+        width: 100%;
+    }
 }
