@@ -1,0 +1,33 @@
+@import url(http://fonts.googleapis.com/css?family=Reenie+Beanie);
+
+body {
+    background: #ccc;
+}
+
+.content {
+    width: 1000px;
+    margin: 200px auto;
+}
+
+.quote {
+    padding: 60px 0;
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 48px;
+    color: #333;
+}
+
+#rhyme {
+    color: navy;
+}
+
+img {
+    width: 200px;
+    float: left;
+    margin-right: 40px;
+}
+
+#kendrick {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}

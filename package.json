@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/mgyarmathy/nish/issues"
   },
-  "homepage": "https://github.com/mgyarmathy/nish"
+  "homepage": "https://github.com/mgyarmathy/nish",
+  "devDependencies": {
+    "browser-request": "^0.3.2",
+    "browserify": "^5.9.1",
+    "underscore": "^1.6.0"
+  }
 }
