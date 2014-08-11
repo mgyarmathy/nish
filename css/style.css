@@ -36,6 +36,10 @@ body {
 }
 
 
+#bish span:nth-child(1) { color: #333;}
+#bish span:nth-child(2) { color: #666;}
+#bish span:nth-child(3) { color: #999;}
+
 img {
     width: 200px;
     float: left;
@@ -48,19 +52,29 @@ img {
     right: 0;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width : 768px) {
     img {
+        margin: 0 auto 40px;
+        padding: 0;
         float: none;
         display: block;
+        width: 150px;
     }
     
     .content {
-        width: 60%;
         padding: 40px;
+        margin: 0;
+        
     }
 
     .quote {
         font-size: 36px;
+        margin: 0;
+        padding: 0;
+    }
+
+    #bish span {
+        display: block;
     }
 
     #kendrick {

@@ -5,17 +5,13 @@ window.onload = function() {
 
     var element = document.getElementById('rhyme');
     var bish = document.getElementById('bish');
+    var kendrick = document.getElementById('kendrick');
     GifLinks( element, { preload: true } );
 
-    var widget = SC.Widget(document.getElementById('kendrick'));
+    var widget = SC.Widget(kendrick);
 
-    element.addEventListener( 'mouseover',  function() { widget.play(); bish.style.display = 'inline'; }, false );
-    element.addEventListener( 'touchstart', function() { widget.play(); bish.style.display = 'inline'; }, false);
-    element.addEventListener( 'mouseout',     function() { widget.pause(); }, false);
-    element.addEventListener( 'touchmove',    function( event ) { event.preventDefault(); widget.pause(); }, false);
-    element.addEventListener( 'click',        function() { widget.pause(); }, false);
-    element.addEventListener( 'dblclick',     function() { widget.pause(); }, false);
-
+    element.addEventListener( 'mouseover',  function() { widget.play(); bish.style.display = 'inline'; kendrick.style.display = 'block'; }, false);
+    element.addEventListener( 'touchstart', function() { widget.play(); bish.style.display = 'inline'; kendrick.style.display = 'block';}, false);
  };
 
 
