@@ -38,6 +38,9 @@ body {
 #rhyme {
     color: navy;
     cursor: pointer;
+}
+
+#rhyme.preloaded {
     -webkit-animation: wiggle 0.6s ease 1s infinite alternate;
     animation: wiggle 0.6s ease 1s infinite alternate;
 }
