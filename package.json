@@ -1,0 +1,19 @@
+{
+  "name": "nish",
+  "version": "0.0.0",
+  "description": "an experiment with NodeJS modules and Browserify",
+  "main": " ",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/mgyarmathy/nish.git"
+  },
+  "author": "mgyarmathy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mgyarmathy/nish/issues"
+  },
+  "homepage": "https://github.com/mgyarmathy/nish"
+}
