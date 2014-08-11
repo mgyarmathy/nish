@@ -1,7 +1,26 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 var nish = require('./nish');
 
-nish();
+window.onload = function() {
+    nish();
+
+    var element = document.getElementById('rhyme');
+    var bish = document.getElementById('bish');
+    GifLinks( element, { preload: true } );
+
+    var widget = SC.Widget(document.getElementById('kendrick'));
+
+    element.addEventListener( 'mouseover',  function() { widget.play(); bish.style.display = 'inline'; }, false );
+    element.addEventListener( 'touchstart', function() { widget.play(); bish.style.display = 'inline'; }, false);
+    element.addEventListener( 'mouseout',     function() { widget.pause(); }, false);
+    element.addEventListener( 'touchmove',    function( event ) { event.preventDefault(); widget.pause(); }, false);
+    element.addEventListener( 'click',        function() { widget.pause(); }, false);
+    element.addEventListener( 'dblclick',     function() { widget.pause(); }, false);
+
+ };
+
+
+
 
 },{"./nish":2}],2:[function(require,module,exports){
 var request = require('browser-request');
